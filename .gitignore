@@ -1,0 +1,306 @@
+# =============================================================================
+# COMPREHENSIVE .GITIGNORE
+# Prevents security issues, bandwidth/storage waste, and common artifacts
+# =============================================================================
+
+# =============================================================================
+# IDE and Editors
+# =============================================================================
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# Security & Secrets
+# =============================================================================
+# Environment files
+.env
+*.env
+*.env.*
+
+# API keys and auth tokens
+*api*key*
+*apikey*
+*secret*
+*_key
+*_secret
+*.key
+
+# Certificates and keys
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Cloud provider credentials
+*gcloud*
+*aws*credentials*
+*azure*credentials*
+
+# Database connection strings
+*connection*string*
+
+# Tokens and credentials
+*token.json*
+*credentials.json*
+
+# =============================================================================
+# Dependencies
+# =============================================================================
+# Node
+node_modules/
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.yarn-cache/
+.npm/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc*
+*.so
+.Python
+venv/
+.venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =============================================================================
+# Build Outputs & Caches
+# =============================================================================
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Production builds
+/build
+dist/
+dist
+frontend/dist/
+frontend/build/
+
+# Build caches
+.cache/
+.gradle/
+.turbo/
+.parcel-cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+/coverage
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.tox/
+
+# =============================================================================
+# Logs and Debug Files
+# =============================================================================
+# Always ignore log files (can get massive)
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dump.rdb
+
+# =============================================================================
+# Data & Output Directories (where large files accumulate)
+# =============================================================================
+# Data directories
+data/
+datasets/
+training_data/
+uploads/
+exports/
+output/
+tmp/
+temp/
+
+# Database directories
+agenthub/agents/youtube/db
+
+# Database dumps (large exports)
+*.dump
+*.bson
+
+# =============================================================================
+# Large Files & Media (bandwidth/storage)
+# =============================================================================
+# Videos
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+
+# Large images
+*.psd
+*.ai
+*.sketch
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# Archive files
+**/*.zip
+**/*.tar.gz
+**/*.tar
+**/*.tgz
+*.rar
+*.7z
+*.pack
+*.deb
+*.dylib
+*.dmg
+*.iso
+
+# Binary executables
+*.exe
+*.dll
+*.app
+
+# =============================================================================
+# AI/ML Specific
+# =============================================================================
+# Model files (can be huge)
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.ckpt
+*.safetensors
+*.onnx
+
+# Model directories
+models/
+checkpoints/
+
+# =============================================================================
+# Databases
+# =============================================================================
+# Database files (binary data files, not SQL scripts)
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================================================================
+# System Files
+# =============================================================================
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# =============================================================================
+# Backup & Temporary Files
+# =============================================================================
+# Standard backup extensions
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.tmp
+*.temp
+~*
+
+# Custom backup naming patterns
+*.*-old
+*.*-bak
+*.*-bak*
+
+# =============================================================================
+# Development Tools
+# =============================================================================
+# Jupyter
+.ipynb_checkpoints/
+
+# Chainlit
+chainlit.md
+.chainlit
+
+# Alembic
+backend/alembic/versions/__pycache__/
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Docker
+*.dockerignore
+
+# Other
+.ac
+
+# =============================================================================
+# Deployment
+# =============================================================================
+.vercel
+
+# =============================================================================
+# Mobile Development
+# =============================================================================
+android-sdk/
+frontend/node_modules/.cache/default-development/0.pack
+
+# =============================================================================
+# Package Manager Lock Files (Optional - Uncomment to ignore)
+# =============================================================================
+# These can be large and cause merge conflicts
+# Uncomment if you want to ignore them:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# poetry.lock
