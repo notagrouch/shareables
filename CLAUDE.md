@@ -80,3 +80,7 @@ updated: 20240109T150000Z
 source: evernote
 ---
 ```
+
+## Standards
+
+- No AI attribution in commits, code comments, or documentation. Credit goes in README.md only.
