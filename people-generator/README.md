@@ -82,7 +82,3 @@ Python versions the low-level random stream is stable but the higher-level
 helpers (`choice`, `randint`) are not contractually guaranteed, so seed-identical
 output is only promised within one Python version. For throwaway test data this
 rarely matters; leave `--seed` off for fully random output.
-
----
-
-Assisted with Claude.
