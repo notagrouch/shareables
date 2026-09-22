@@ -84,4 +84,4 @@ source: evernote
 
 ## Standards
 
-- No AI attribution in commits, code comments, or documentation. Credit goes in README.md only.
+- No AI attribution anywhere: not in commits, code comments, documentation, or README. No "Assisted with Claude", no Co-Authored-By trailers, no agent signatures of any kind.
