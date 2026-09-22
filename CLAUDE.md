@@ -6,6 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a collection of shareable utilities. Currently contains:
 - **evernote-converter**: Python utility for converting Evernote `.enex` export files to Markdown
+- **people-generator**: Python utility for generating pools of fake people (CSV/JSONL) for testing, with an optional debt-settlement credit-fields mode
 
 ## Evernote Converter
 
